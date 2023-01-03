@@ -1,5 +1,5 @@
 {
-  "name": "twitterClone",
+  "name": "twitterclone",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -44,6 +44,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
+    "@faker-js/faker": "^7.6.0",
     "@storybook/addon-actions": "^6.5.15",
     "@storybook/addon-essentials": "^6.5.15",
     "@storybook/addon-interactions": "^6.5.15",
@@ -60,12 +61,15 @@
     "@typescript-eslint/parser": "^5.33.0",
     "babel-loader": "^8.3.0",
     "eslint": "^8.26.0",
-    "eslint-config-next": "13.1.1",
+    "eslint-config-next": "^13.1.1",
     "prisma": "^4.5.0",
     "tsx": "^3.12.1",
     "typescript": "^4.8.4"
   },
   "ct3aMetadata": {
     "initVersion": "6.11.6"
+  },
+  "prisma": {
+    "seed": "tsx prisma/seed.ts"
   }
 }
