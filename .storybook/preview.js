@@ -1,6 +1,6 @@
-import { MantineProvider } from '@mantine/core';
-import React from 'react';
-import { theme } from './theme';
+import { MantineProvider } from "@mantine/core";
+import React from "react";
+import { theme } from "./theme";
 
 // Create a wrapper component that will contain all your providers.
 // Usually you should render all providers in this component:
@@ -26,7 +26,7 @@ export const decorators = [
 ];
 
 export const parameters = {
-  actions: { argTypesRegex: '^on[A-Z].*' },
+  actions: { argTypesRegex: "^on[A-Z].*" },
   controls: {
     matchers: {
       color: /(background|color)$/i,
