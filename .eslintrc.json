@@ -4,8 +4,35 @@
     "project": "./tsconfig.json"
   },
   "plugins": ["@typescript-eslint"],
-  "extends": ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/typescript",
+    "plugin:import/recommended",
+    "next",
+
+    "plugin:import/typescript"
+  ],
   "rules": {
-    "@typescript-eslint/consistent-type-imports": "warn"
+    "@typescript-eslint/consistent-type-imports": "warn",
+    "react/jsx-filename-extension": [
+      2,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "import/extensions": [0, "ignorePackages"],
+    "no-console": "off",
+    "import/no-unresolved": "off",
+    "linebreak-style": "off",
+    "object-curly-newline": "off",
+    "operator-linebreak": "off",
+    "implicit-arrow-linebreak": "off",
+    "no-underscore-dangle": "off",
+    "react/jsx-wrap-multilines": "off",
+    "import/prefer-default-export": "off",
+    "react/require-default-props": "off",
+    "no-useless-constructor": "off",
+    "camelcase": "off",
+    "no-confusing-arrow": "off",
+    "no-nested-ternary": "off"
   }
 }
