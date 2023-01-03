@@ -44,7 +44,7 @@ export function Timeline(
   console.log("tweets destructured", tweets);
 
   return (
-    <Flex>
+    <Flex direction={"column"}>
       <CreateTweet />
       {tweets.map((tweet) => (
         <SingleTweet key={tweet.id} tweet={tweet} />
